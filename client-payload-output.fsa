@@ -1,0 +1,360 @@
+<fsa string_length="2" complexity="2.3911833671765725" entropy_rate="1.0848855827128259">
+	<states>
+		<e-state id="0" name="" value="0.0">
+			<history data="{l}"></history>
+			<history data="{l,l}"></history>
+			<history data="{l,k}"></history>
+			<history data="{l,i}"></history>
+			<history data="{k}"></history>
+			<history data="{k,l}"></history>
+			<history data="{k,k}"></history>
+			<history data="{k,i}"></history>
+			<history data="{j,l}"></history>
+			<history data="{j,k}"></history>
+			<history data="{i}"></history>
+			<history data="{i,l}"></history>
+			<history data="{i,k}"></history>
+			<history data="{i,i}"></history>
+			<history data="{h,l}"></history>
+			<history data="{h,k}"></history>
+			<history data="{h,i}"></history>
+			<history data="{g,l}"></history>
+			<history data="{g,k}"></history>
+			<history data="{g,i}"></history>
+			<history data="{f,l}"></history>
+			<history data="{f,k}"></history>
+			<history data="{f,i}"></history>
+			<history data="{e,l}"></history>
+			<history data="{e,k}"></history>
+			<history data="{d,l}"></history>
+			<history data="{d,k}"></history>
+			<history data="{d,i}"></history>
+			<history data="{c,l}"></history>
+			<history data="{c,k}"></history>
+			<history data="{c,i}"></history>
+			<history data="{b,l}"></history>
+			<history data="{b,k}"></history>
+			<history data="{b,i}"></history>
+			<history data="{a,l}"></history>
+			<history data="{a,k}"></history>
+			<history data="{a,i}"></history>
+		</e-state>
+		<e-state id="1" name="" value="0.0">
+			<history data="{l,c}"></history>
+			<history data="{k,c}"></history>
+			<history data="{i,c}"></history>
+			<history data="{h,c}"></history>
+			<history data="{g,c}"></history>
+			<history data="{d,c}"></history>
+			<history data="{c}"></history>
+			<history data="{c,c}"></history>
+			<history data="{b,c}"></history>
+			<history data="{a,c}"></history>
+		</e-state>
+		<e-state id="2" name="" value="0.0">
+			<history data="{j,f}"></history>
+			<history data="{f,f}"></history>
+			<history data="{d,f}"></history>
+			<history data="{a,f}"></history>
+		</e-state>
+		<e-state id="3" name="" value="0.0">
+			<history data="{l,j}"></history>
+			<history data="{k,j}"></history>
+			<history data="{j}"></history>
+			<history data="{i,j}"></history>
+			<history data="{h,j}"></history>
+			<history data="{g,j}"></history>
+			<history data="{e,j}"></history>
+			<history data="{d,j}"></history>
+			<history data="{c,j}"></history>
+			<history data="{b,j}"></history>
+			<history data="{a,j}"></history>
+		</e-state>
+		<e-state id="4" name="" value="0.0">
+			<history data="{l,h}"></history>
+			<history data="{k,h}"></history>
+			<history data="{j,h}"></history>
+			<history data="{i,h}"></history>
+			<history data="{h}"></history>
+			<history data="{g,h}"></history>
+			<history data="{f,h}"></history>
+			<history data="{e,h}"></history>
+			<history data="{d,h}"></history>
+			<history data="{c,h}"></history>
+			<history data="{b,h}"></history>
+			<history data="{a,h}"></history>
+		</e-state>
+		<e-state id="5" name="" value="0.0">
+			<history data="{l,g}"></history>
+			<history data="{k,g}"></history>
+			<history data="{j,g}"></history>
+			<history data="{i,g}"></history>
+			<history data="{h,g}"></history>
+			<history data="{g}"></history>
+			<history data="{g,g}"></history>
+			<history data="{e,g}"></history>
+			<history data="{d,g}"></history>
+			<history data="{c,g}"></history>
+			<history data="{b,g}"></history>
+			<history data="{a,g}"></history>
+		</e-state>
+		<e-state id="6" name="" value="0.0">
+			<history data="{l,f}"></history>
+			<history data="{k,f}"></history>
+			<history data="{i,f}"></history>
+			<history data="{h,f}"></history>
+			<history data="{g,f}"></history>
+			<history data="{b,f}"></history>
+		</e-state>
+		<e-state id="7" name="" value="0.0">
+			<history data="{l,e}"></history>
+			<history data="{k,e}"></history>
+			<history data="{j,e}"></history>
+			<history data="{i,e}"></history>
+			<history data="{g,e}"></history>
+			<history data="{f,e}"></history>
+			<history data="{e}"></history>
+			<history data="{e,e}"></history>
+			<history data="{a,e}"></history>
+		</e-state>
+		<e-state id="8" name="" value="0.0">
+			<history data="{l,d}"></history>
+			<history data="{k,d}"></history>
+			<history data="{j,d}"></history>
+			<history data="{i,d}"></history>
+			<history data="{d}"></history>
+			<history data="{d,d}"></history>
+			<history data="{c,d}"></history>
+			<history data="{b,d}"></history>
+		</e-state>
+		<e-state id="9" name="" value="0.0">
+			<history data="{l,b}"></history>
+			<history data="{k,b}"></history>
+			<history data="{i,b}"></history>
+			<history data="{h,b}"></history>
+			<history data="{g,b}"></history>
+			<history data="{f,b}"></history>
+			<history data="{e,b}"></history>
+			<history data="{d,b}"></history>
+			<history data="{c,b}"></history>
+			<history data="{b}"></history>
+			<history data="{b,b}"></history>
+			<history data="{a,b}"></history>
+		</e-state>
+		<e-state id="10" name="" value="0.0">
+			<history data="{l,a}"></history>
+			<history data="{k,a}"></history>
+			<history data="{i,a}"></history>
+			<history data="{h,a}"></history>
+			<history data="{g,a}"></history>
+			<history data="{f,a}"></history>
+			<history data="{e,a}"></history>
+			<history data="{d,a}"></history>
+			<history data="{c,a}"></history>
+			<history data="{b,a}"></history>
+			<history data="{a}"></history>
+			<history data="{a,a}"></history>
+		</e-state>
+		<e-state id="11" name="" value="0.0">
+			<history data="{j,j}"></history>
+			<history data="{f,j}"></history>
+		</e-state>
+		<e-state id="12" name="" value="0.0">
+			<history data="{j,i}"></history>
+		</e-state>
+		<e-state id="13" name="" value="0.0">
+			<history data="{h,h}"></history>
+		</e-state>
+		<e-state id="14" name="" value="0.0">
+			<history data="{f,g}"></history>
+		</e-state>
+		<e-state id="15" name="" value="0.0">
+			<history data="{j,c}"></history>
+			<history data="{h,d}"></history>
+			<history data="{g,d}"></history>
+			<history data="{f,c}"></history>
+			<history data="{e,c}"></history>
+			<history data="{a,d}"></history>
+		</e-state>
+		<e-state id="16" name="" value="0.0">
+			<history data="{j,b}"></history>
+		</e-state>
+		<e-state id="17" name="" value="0.0">
+			<history data="{j,a}"></history>
+		</e-state>
+		<e-state id="18" name="" value="0.0">
+			<history data="{h,e}"></history>
+			<history data="{b,e}"></history>
+		</e-state>
+	</states>
+	<events>
+		<event id="1776" state1ID="0" state2ID="10" name="a" value="0.02400138421989322"></event>
+		<event id="1777" state1ID="0" state2ID="9" name="b" value="0.014270647946740492"></event>
+		<event id="1778" state1ID="0" state2ID="1" name="c" value="0.13491200316393118"></event>
+		<event id="1779" state1ID="0" state2ID="8" name="d" value="0.0037736470898424627"></event>
+		<event id="1780" state1ID="0" state2ID="7" name="e" value="0.0015819655922483687"></event>
+		<event id="1781" state1ID="0" state2ID="6" name="f" value="0.003065058334981214"></event>
+		<event id="1782" state1ID="0" state2ID="5" name="g" value="0.08985894140135785"></event>
+		<event id="1783" state1ID="0" state2ID="4" name="h" value="0.030790653219959132"></event>
+		<event id="1784" state1ID="0" state2ID="0" name="i" value="0.21663865269263727"></event>
+		<event id="1785" state1ID="0" state2ID="3" name="j" value="0.021842660338804297"></event>
+		<event id="1786" state1ID="0" state2ID="0" name="k" value="0.1781853536352251"></event>
+		<event id="1787" state1ID="0" state2ID="0" name="l" value="0.2810790323643794"></event>
+		<event id="1812" state1ID="3" state2ID="17" name="a" value="5.958055290753099E-4"></event>
+		<event id="1813" state1ID="3" state2ID="16" name="b" value="5.958055290753099E-4"></event>
+		<event id="1814" state1ID="3" state2ID="15" name="c" value="0.03890610104861773"></event>
+		<event id="1815" state1ID="3" state2ID="8" name="d" value="0.00607721639656816"></event>
+		<event id="1816" state1ID="3" state2ID="7" name="e" value="2.9790276453765493E-4"></event>
+		<event id="1817" state1ID="3" state2ID="2" name="f" value="5.958055290753098E-5"></event>
+		<event id="1818" state1ID="3" state2ID="5" name="g" value="0.005004766444232603"></event>
+		<event id="1819" state1ID="3" state2ID="4" name="h" value="0.011141563393708294"></event>
+		<event id="1820" state1ID="3" state2ID="12" name="i" value="0.031875595805529074"></event>
+		<event id="1821" state1ID="3" state2ID="11" name="j" value="0.8696973307912298"></event>
+		<event id="1822" state1ID="3" state2ID="0" name="k" value="0.02359389895138227"></event>
+		<event id="1823" state1ID="3" state2ID="0" name="l" value="0.01215443279313632"></event>
+		<event id="1836" state1ID="4" state2ID="10" name="a" value="0.008081424160408645"></event>
+		<event id="1837" state1ID="4" state2ID="9" name="b" value="0.01780200510806999"></event>
+		<event id="1838" state1ID="4" state2ID="1" name="c" value="0.010406739602790378"></event>
+		<event id="1839" state1ID="4" state2ID="15" name="d" value="0.007547745206419395"></event>
+		<event id="1840" state1ID="4" state2ID="18" name="e" value="8.005184309838753E-4"></event>
+		<event id="1841" state1ID="4" state2ID="6" name="f" value="4.574391034193573E-4"></event>
+		<event id="1842" state1ID="4" state2ID="5" name="g" value="0.05397781420348416"></event>
+		<event id="1843" state1ID="4" state2ID="13" name="h" value="0.7925513665993215"></event>
+		<event id="1844" state1ID="4" state2ID="0" name="i" value="0.03297373537147867"></event>
+		<event id="1845" state1ID="4" state2ID="3" name="j" value="0.006480387298440895"></event>
+		<event id="1846" state1ID="4" state2ID="0" name="k" value="0.0545877330080433"></event>
+		<event id="1847" state1ID="4" state2ID="0" name="l" value="0.014333091907139862"></event>
+		<event id="1848" state1ID="5" state2ID="10" name="a" value="0.04386874845238015"></event>
+		<event id="1849" state1ID="5" state2ID="9" name="b" value="0.01402729164854139"></event>
+		<event id="1850" state1ID="5" state2ID="1" name="c" value="0.006739257008626516"></event>
+		<event id="1851" state1ID="5" state2ID="15" name="d" value="0.0011510945436780148"></event>
+		<event id="1852" state1ID="5" state2ID="7" name="e" value="4.4169906908574986E-4"></event>
+		<event id="1853" state1ID="5" state2ID="6" name="f" value="0.0015258695113871358"></event>
+		<event id="1854" state1ID="5" state2ID="5" name="g" value="0.8525996667179752"></event>
+		<event id="1855" state1ID="5" state2ID="4" name="h" value="0.005246849547927695"></event>
+		<event id="1856" state1ID="5" state2ID="0" name="i" value="0.023537206454160336"></event>
+		<event id="1857" state1ID="5" state2ID="3" name="j" value="2.676964055065151E-4"></event>
+		<event id="1858" state1ID="5" state2ID="0" name="k" value="0.04824558468241168"></event>
+		<event id="1859" state1ID="5" state2ID="0" name="l" value="0.0023490359583196695"></event>
+		<event id="1860" state1ID="6" state2ID="10" name="a" value="0.009259259259259259"></event>
+		<event id="1861" state1ID="6" state2ID="9" name="b" value="0.06790123456790123"></event>
+		<event id="1862" state1ID="6" state2ID="15" name="c" value="0.027777777777777776"></event>
+		<event id="1864" state1ID="6" state2ID="7" name="e" value="0.006172839506172839"></event>
+		<event id="1865" state1ID="6" state2ID="2" name="f" value="0.009259259259259259"></event>
+		<event id="1866" state1ID="6" state2ID="14" name="g" value="0.36728395061728397"></event>
+		<event id="1867" state1ID="6" state2ID="4" name="h" value="0.17901234567901234"></event>
+		<event id="1868" state1ID="6" state2ID="0" name="i" value="0.046296296296296294"></event>
+		<event id="1869" state1ID="6" state2ID="11" name="j" value="0.0030864197530864196"></event>
+		<event id="1870" state1ID="6" state2ID="0" name="k" value="0.07407407407407407"></event>
+		<event id="1871" state1ID="6" state2ID="0" name="l" value="0.20987654320987653"></event>
+		<event id="1872" state1ID="7" state2ID="10" name="a" value="0.01282051282051282"></event>
+		<event id="1873" state1ID="7" state2ID="9" name="b" value="0.1282051282051282"></event>
+		<event id="1874" state1ID="7" state2ID="15" name="c" value="0.01282051282051282"></event>
+		<event id="1876" state1ID="7" state2ID="7" name="e" value="0.04487179487179487"></event>
+		<event id="1878" state1ID="7" state2ID="5" name="g" value="0.08974358974358974"></event>
+		<event id="1879" state1ID="7" state2ID="4" name="h" value="0.3974358974358974"></event>
+		<event id="1881" state1ID="7" state2ID="3" name="j" value="0.02564102564102564"></event>
+		<event id="1882" state1ID="7" state2ID="0" name="k" value="0.26282051282051283"></event>
+		<event id="1883" state1ID="7" state2ID="0" name="l" value="0.02564102564102564"></event>
+		<event id="1884" state1ID="8" state2ID="10" name="a" value="0.04597701149425287"></event>
+		<event id="1885" state1ID="8" state2ID="9" name="b" value="0.07982120051085569"></event>
+		<event id="1886" state1ID="8" state2ID="1" name="c" value="0.008301404853128991"></event>
+		<event id="1887" state1ID="8" state2ID="8" name="d" value="0.21264367816091953"></event>
+		<event id="1889" state1ID="8" state2ID="2" name="f" value="0.001277139208173691"></event>
+		<event id="1890" state1ID="8" state2ID="5" name="g" value="0.03639846743295019"></event>
+		<event id="1891" state1ID="8" state2ID="4" name="h" value="0.2739463601532567"></event>
+		<event id="1892" state1ID="8" state2ID="0" name="i" value="0.05874840357598978"></event>
+		<event id="1893" state1ID="8" state2ID="3" name="j" value="0.13537675606641125"></event>
+		<event id="1894" state1ID="8" state2ID="0" name="k" value="0.04789272030651341"></event>
+		<event id="1895" state1ID="8" state2ID="0" name="l" value="0.09961685823754789"></event>
+		<event id="1896" state1ID="1" state2ID="10" name="a" value="0.03657071208400815"></event>
+		<event id="1897" state1ID="1" state2ID="9" name="b" value="0.004283997701269526"></event>
+		<event id="1898" state1ID="1" state2ID="1" name="c" value="0.018337599916409802"></event>
+		<event id="1899" state1ID="1" state2ID="8" name="d" value="0.002194242725040489"></event>
+		<event id="1902" state1ID="1" state2ID="5" name="g" value="0.026644375946920224"></event>
+		<event id="1903" state1ID="1" state2ID="4" name="h" value="0.03066715427616112"></event>
+		<event id="1904" state1ID="1" state2ID="0" name="i" value="0.863904707173084"></event>
+		<event id="1905" state1ID="1" state2ID="3" name="j" value="0.0014105846089546002"></event>
+		<event id="1906" state1ID="1" state2ID="0" name="k" value="0.010344287132333733"></event>
+		<event id="1907" state1ID="1" state2ID="0" name="l" value="0.005642338435818401"></event>
+		<event id="1908" state1ID="9" state2ID="10" name="a" value="0.023190574153731065"></event>
+		<event id="1909" state1ID="9" state2ID="9" name="b" value="0.05797643538432766"></event>
+		<event id="1910" state1ID="9" state2ID="1" name="c" value="0.055732186272676267"></event>
+		<event id="1911" state1ID="9" state2ID="8" name="d" value="0.025060781746773893"></event>
+		<event id="1912" state1ID="9" state2ID="18" name="e" value="0.0011221245558256966"></event>
+		<event id="1913" state1ID="9" state2ID="6" name="f" value="0.0029923321488685246"></event>
+		<event id="1914" state1ID="9" state2ID="5" name="g" value="0.38152234898073684"></event>
+		<event id="1915" state1ID="9" state2ID="4" name="h" value="0.15335702262951187"></event>
+		<event id="1916" state1ID="9" state2ID="0" name="i" value="0.08041892650084159"></event>
+		<event id="1917" state1ID="9" state2ID="3" name="j" value="0.01701888909668973"></event>
+		<event id="1918" state1ID="9" state2ID="0" name="k" value="0.09463250420796708"></event>
+		<event id="1919" state1ID="9" state2ID="0" name="l" value="0.10697587432204975"></event>
+		<event id="1920" state1ID="10" state2ID="10" name="a" value="0.02155688622754491"></event>
+		<event id="1921" state1ID="10" state2ID="9" name="b" value="0.004974666052510364"></event>
+		<event id="1922" state1ID="10" state2ID="1" name="c" value="0.02026715799170889"></event>
+		<event id="1923" state1ID="10" state2ID="15" name="d" value="1.8424689083371717E-4"></event>
+		<event id="1924" state1ID="10" state2ID="7" name="e" value="7.369875633348687E-4"></event>
+		<event id="1925" state1ID="10" state2ID="2" name="f" value="1.8424689083371717E-4"></event>
+		<event id="1926" state1ID="10" state2ID="5" name="g" value="0.6165822201750345"></event>
+		<event id="1927" state1ID="10" state2ID="4" name="h" value="0.06559189313680332"></event>
+		<event id="1928" state1ID="10" state2ID="0" name="i" value="0.22385997236296637"></event>
+		<event id="1929" state1ID="10" state2ID="3" name="j" value="0.0012897282358360202"></event>
+		<event id="1930" state1ID="10" state2ID="0" name="k" value="0.033348687240902807"></event>
+		<event id="1931" state1ID="10" state2ID="0" name="l" value="0.011423307231690466"></event>
+		<event id="2125" state1ID="11" state2ID="16" name="b" value="2.9682398337785694E-4"></event>
+		<event id="2126" state1ID="11" state2ID="15" name="c" value="0.026046304541406946"></event>
+		<event id="2127" state1ID="11" state2ID="8" name="d" value="0.006678539626001781"></event>
+		<event id="2128" state1ID="11" state2ID="7" name="e" value="3.7102997922232116E-4"></event>
+		<event id="2129" state1ID="11" state2ID="2" name="f" value="7.420599584446424E-5"></event>
+		<event id="2131" state1ID="11" state2ID="4" name="h" value="8.162659542891065E-4"></event>
+		<event id="2132" state1ID="11" state2ID="12" name="i" value="0.014321757197981597"></event>
+		<event id="2133" state1ID="11" state2ID="11" name="j" value="0.9166666666666666"></event>
+		<event id="2134" state1ID="11" state2ID="0" name="k" value="0.024933214603739984"></event>
+		<event id="2135" state1ID="11" state2ID="0" name="l" value="0.009795191451469279"></event>
+		<event id="2136" state1ID="12" state2ID="10" name="a" value="0.0027472527472527475"></event>
+		<event id="2138" state1ID="12" state2ID="1" name="c" value="0.01098901098901099"></event>
+		<event id="2142" state1ID="12" state2ID="5" name="g" value="0.02197802197802198"></event>
+		<event id="2143" state1ID="12" state2ID="4" name="h" value="0.008241758241758242"></event>
+		<event id="2144" state1ID="12" state2ID="0" name="i" value="0.728021978021978"></event>
+		<event id="2145" state1ID="12" state2ID="3" name="j" value="0.008241758241758242"></event>
+		<event id="2146" state1ID="12" state2ID="0" name="k" value="0.005494505494505495"></event>
+		<event id="2147" state1ID="12" state2ID="0" name="l" value="0.21428571428571427"></event>
+		<event id="2173" state1ID="2" state2ID="9" name="b" value="0.5"></event>
+		<event id="2178" state1ID="2" state2ID="14" name="g" value="0.16666666666666666"></event>
+		<event id="2180" state1ID="2" state2ID="0" name="i" value="0.16666666666666666"></event>
+		<event id="2183" state1ID="2" state2ID="0" name="l" value="0.16666666666666666"></event>
+		<event id="2208" state1ID="15" state2ID="10" name="a" value="0.03303684879288437"></event>
+		<event id="2209" state1ID="15" state2ID="9" name="b" value="0.06480304955527319"></event>
+		<event id="2210" state1ID="15" state2ID="1" name="c" value="0.005082592121982211"></event>
+		<event id="2211" state1ID="15" state2ID="8" name="d" value="0.16899618805590852"></event>
+		<event id="2214" state1ID="15" state2ID="5" name="g" value="0.0241423125794155"></event>
+		<event id="2215" state1ID="15" state2ID="4" name="h" value="0.030495552731893267"></event>
+		<event id="2216" state1ID="15" state2ID="0" name="i" value="0.627700127064803"></event>
+		<event id="2217" state1ID="15" state2ID="3" name="j" value="0.01905972045743329"></event>
+		<event id="2218" state1ID="15" state2ID="0" name="k" value="0.0038119440914866584"></event>
+		<event id="2219" state1ID="15" state2ID="0" name="l" value="0.022871664548919948"></event>
+		<event id="2229" state1ID="16" state2ID="3" name="j" value="1.0"></event>
+		<event id="2238" state1ID="17" state2ID="5" name="g" value="1.0"></event>
+		<event id="2460" state1ID="13" state2ID="10" name="a" value="1.0700337060617409E-4"></event>
+		<event id="2461" state1ID="13" state2ID="9" name="b" value="0.01738804772350329"></event>
+		<event id="2462" state1ID="13" state2ID="1" name="c" value="0.0044406398801562245"></event>
+		<event id="2463" state1ID="13" state2ID="15" name="d" value="0.00941629661334332"></event>
+		<event id="2464" state1ID="13" state2ID="18" name="e" value="4.8151516772778344E-4"></event>
+		<event id="2466" state1ID="13" state2ID="5" name="g" value="0.002568080894548178"></event>
+		<event id="2467" state1ID="13" state2ID="13" name="h" value="0.8876464608635172"></event>
+		<event id="2468" state1ID="13" state2ID="0" name="i" value="0.019849125247445296"></event>
+		<event id="2469" state1ID="13" state2ID="3" name="j" value="0.0037451179712160933"></event>
+		<event id="2470" state1ID="13" state2ID="0" name="k" value="0.051147611149751214"></event>
+		<event id="2471" state1ID="13" state2ID="0" name="l" value="0.003210101118185223"></event>
+		<event id="2497" state1ID="18" state2ID="9" name="b" value="0.4444444444444444"></event>
+		<event id="2502" state1ID="18" state2ID="5" name="g" value="0.1111111111111111"></event>
+		<event id="2503" state1ID="18" state2ID="4" name="h" value="0.4444444444444444"></event>
+		<event id="2772" state1ID="14" state2ID="10" name="a" value="0.008333333333333333"></event>
+		<event id="2774" state1ID="14" state2ID="1" name="c" value="0.008333333333333333"></event>
+		<event id="2777" state1ID="14" state2ID="6" name="f" value="0.16666666666666666"></event>
+		<event id="2778" state1ID="14" state2ID="5" name="g" value="0.7416666666666667"></event>
+		<event id="2780" state1ID="14" state2ID="0" name="i" value="0.025"></event>
+		<event id="2782" state1ID="14" state2ID="0" name="k" value="0.041666666666666664"></event>
+		<event id="2783" state1ID="14" state2ID="0" name="l" value="0.008333333333333333"></event>
+	</events>
+</fsa>

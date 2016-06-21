@@ -1,0 +1,42 @@
+<fsa string_length="2" complexity="1.8894195956312678" entropy_rate="0.7066449240136862">
+	<states>
+		<e-state id="2" name="" value="0.0">
+			<history data="{c,b}"></history>
+			<history data="{b}"></history>
+			<history data="{b,b}"></history>
+			<history data="{a,b}"></history>
+		</e-state>
+		<e-state id="3" name="" value="0.0">
+			<history data="{c}"></history>
+			<history data="{c,c}"></history>
+			<history data="{b,c}"></history>
+			<history data="{a,c}"></history>
+		</e-state>
+		<e-state id="4" name="" value="0.0">
+			<history data="{a,a}"></history>
+		</e-state>
+		<e-state id="5" name="" value="0.0">
+			<history data="{b,a}"></history>
+		</e-state>
+		<e-state id="6" name="" value="0.0">
+			<history data="{c,a}"></history>
+		</e-state>
+	</states>
+	<events>
+		<event id="33" state1ID="3" state2ID="6" name="a" value="0.9926739926739927"></event>
+		<event id="34" state1ID="3" state2ID="2" name="b" value="0.002442002442002442"></event>
+		<event id="35" state1ID="3" state2ID="3" name="c" value="0.004884004884004884"></event>
+		<event id="39" state1ID="2" state2ID="5" name="a" value="0.9989184735026008"></event>
+		<event id="40" state1ID="2" state2ID="2" name="b" value="1.545037853427409E-4"></event>
+		<event id="41" state1ID="2" state2ID="3" name="c" value="9.270227120564454E-4"></event>
+		<event id="42" state1ID="6" state2ID="4" name="a" value="0.9929713582850114"></event>
+		<event id="43" state1ID="6" state2ID="2" name="b" value="0.002635740643120717"></event>
+		<event id="44" state1ID="6" state2ID="3" name="c" value="0.004392901071867862"></event>
+		<event id="54" state1ID="5" state2ID="4" name="a" value="0.9965972365436172"></event>
+		<event id="55" state1ID="5" state2ID="2" name="b" value="1.0311404413281089E-4"></event>
+		<event id="56" state1ID="5" state2ID="3" name="c" value="0.0032996494122499486"></event>
+		<event id="63" state1ID="4" state2ID="4" name="a" value="0.4996995914443643"></event>
+		<event id="64" state1ID="4" state2ID="2" name="b" value="0.38818793559240566"></event>
+		<event id="65" state1ID="4" state2ID="3" name="c" value="0.11211247296322999"></event>
+	</events>
+</fsa>
