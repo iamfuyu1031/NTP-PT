@@ -11,6 +11,6 @@ The *usage* is:
 - run 'python pt_forwarder.py' in another terminal;
 - run 'python tcp_client.py' in the third terminal.
 
-Now you can see the communication between tcp_client and udp_server are transformed with wireshark sniffing.
+Now you can see that the traffic between tcp_client and udp_server are transformed into NTP tarffic.
 
 
