@@ -1,7 +1,5 @@
 from __future__ import division
 import os
-import regex2dfa
-import fte.encoder
 
 # Cut list into 16 chunks
 def chunks(seq, size):
