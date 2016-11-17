@@ -14,7 +14,7 @@ import random
 import Queue
 import xml.etree.ElementTree as ET
 
-
+# port forwarding connection
 def port_forwarding(host, port):
 	forward = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 	try:
@@ -24,7 +24,7 @@ def port_forwarding(host, port):
 		print e
 		return False
 
-
+# initiate the server
 def server_init(conn_host, conn_port):
 	server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -33,8 +33,6 @@ def server_init(conn_host, conn_port):
 	return server
 
 def server_recv_data(conn_host, conn_port, fwd_host, fwd_port, data, server, timing, start, a,b,c,d):
-#def server_recv_data(conn_host, conn_port, fwd_host, fwd_port, data, server):
-	#server = server_init(conn_host, conn_port)
 	input_list = []
 	channel = {}
 	addr = {}
@@ -96,9 +94,8 @@ def server_on_recv(s, data, channel, addr, fwd_host, fwd_port, a,b,c,d):
 	aes_decryption_remaining = b.get()
 	data_incoming_remaining = c.get()
 	data_outgoing_remaining = d.get()
-	#print data
-	#channel[s].send(data)
-	# here we can parse and/or modify the data before send forward
+	# here we can transform the payload of tcp into NTP (udp) before sending forward
+	# If the packet is sending to the udp server
 	if addr[s] == (fwd_host, fwd_port):
 		# Use a string of length 5 to represent the length of data
 		data = str(len(data)).zfill(5) + data
@@ -118,12 +115,9 @@ def server_on_recv(s, data, channel, addr, fwd_host, fwd_port, a,b,c,d):
 				output, aes_encryption_remaining = encode_as_ntp_no_fte.transform_aes_into_ntp(aes_encryption_remaining)
 				for i in range(0, len(output)):
 					channel[s].sendto(output[i].decode('hex'), addr[s])
+	# Else the packet is sending from the udp server
 	else:
 		print 'tcp'
-		#self.channel[self.s].send('hello world')
-		# When there is an NTP packet coming, decode it
-		#print 'there is data'
-		#print data
 		output2 = decode_ntp_no_fte.recover_ntp_into_aes(data.encode('hex'))
 		aes_decryption_remaining += output2
 		if len(aes_decryption_remaining) >= 176:
@@ -139,8 +133,7 @@ def server_on_recv(s, data, channel, addr, fwd_host, fwd_port, a,b,c,d):
 	a.put(aes_encryption_remaining)
 	b.put(aes_decryption_remaining)
 	c.put(data_incoming_remaining)
-	d.put(data_outgoing_remaining)
-	#return  data_incoming_remaining, aes_encryption_remaining, aes_decryption_remaining, data_outgoing_remaining            
+	d.put(data_outgoing_remaining)           
 
 def send_one_packet(s, data, channel, timing, start, addr, fwd_host, fwd_port, data_incoming_remaining, aes_encryption_remaining, aes_decryption_remaining, data_outgoing_remaining):
 	# When there is data, check the time
@@ -157,8 +150,6 @@ def send_one_packet(s, data, channel, timing, start, addr, fwd_host, fwd_port, d
 			if data != '':
 				print 'send data!!!!!!'
 				print data
-				#channel[s].send(data)
-				#server_on_recv(s, data, channel)
 				server_on_recv(s, data, channel, addr, fwd_host, fwd_port, data_incoming_remaining, aes_encryption_remaining, aes_decryption_remaining, data_outgoing_remaining)
 				data = data[len(data):]
 			# Else, send an empty packet
@@ -167,7 +158,8 @@ def send_one_packet(s, data, channel, timing, start, addr, fwd_host, fwd_port, d
 				channel[s].send('')
 			start.put(time.time())
 			flag = 1
-     
+			
+# Generate a few timing based on the NTP HMM model
 def gen_time(mode, timing, start, a_list, b_list, c_list):
 	while True:
 		time.sleep(1)
@@ -180,7 +172,7 @@ def gen_time(mode, timing, start, a_list, b_list, c_list):
 		timing.put(one_timing)
 		#print timing.qsize()
 
-
+# Parse an HMM model
 def read_hmm(start, filename):
 	tree = ET.parse(filename)
 	root = tree.getroot()
@@ -229,6 +221,7 @@ def read_file(filename):
 		data[i] = float(line[i].strip())
 	return data
 
+# randomly select a value based on the symbol
 def map_label_to_value(a_list, b_list, c_list, choice):
 	output = ''
 	if choice == 'a':
@@ -239,7 +232,7 @@ def map_label_to_value(a_list, b_list, c_list, choice):
 		output = random.choice(c_list)
 	return output               
 
-
+# Main function
 if __name__ == '__main__':
 	# Changing the buffer_size and delay, you can improve the speed and bandwidth.
 	# But when buffer get to high or delay go too down, you can broke things
@@ -253,19 +246,11 @@ if __name__ == '__main__':
 	block_size =  16
 	padding = '{'
 	key_file = 'aes_key'
-	# Generate AES key
+	# Generate/read AES key
 	#key = aes.aes_gen_key(block_size, key_file)
 	key = aes.aes_read_key(block_size, key_file)
-	# Shared data between process
-	#aes_encryption_remaining = ''
-	#aes_decryption_remaining = ''
-	#data_incoming_remaining = ''
-	#data_outgoing_remaining = ''
-	#data = ''
-	#server = server_init(conn_host, conn_port)
-	#server_recv_data(conn_host, conn_port, fwd_host, fwd_port, data, server)
 
-	# Read into file
+	# Read NTP files
 	mode = 'client'
 	a_list = read_file('ntp-' + mode + '-pattern/a')
 	b_list = read_file('ntp-' + mode + '-pattern/b')
@@ -312,19 +297,10 @@ if __name__ == '__main__':
 		#sd = multiprocessing.Process(target = check_time, args = (timing, start, shared_data,))	
 		hmm.join()
 		rev.join()
-		#sd.join()
-
+	# stop the program with ctrl+c
 	except KeyboardInterrupt:
 		print "Ctrl C - Stopping server"
 		sys.exit(1)
-
-
-
-	#try:
-		#server.main_loop()
-	#except KeyboardInterrupt:
-		#print "Ctrl C - Stopping server"
-		#sys.exit(1)
 
 
 
